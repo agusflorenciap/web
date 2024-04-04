@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content ="Esta es una página sobre los conceptos relacionados al Círculo de Quintas"> <!-- reseña de lo que contiene la página adentro -->
+  <meta name="keywords" content ="HTML5, CSS3, JS">
+  <title> Conceptos Relacionados</title>
+  <link rel="stylesheet" href="Estilo.css">
+</head>
+
+<body>
+    <div id="agrupar">  <!-- todo el contenido de mi página -->
+      <div class="logo"><span></span></div>  <!-- acá el logo-->
+      <div class="borde_con_volados">  <!-- el bordecito envuelve a la cabecera y el nav  -->
+        <nav id="menu"><a href="index.html">Inicio</a> <a href="conceptos_relacionados.html">Conceptos</a> <a href="utilización.html">Utilización</a> <a href="juego.html">Juego</a> <a href="más.html">Más</a></nav>
+          <div class="borde_con_patron"><span></span></div>
+          <header id="cabecera">
+            <h1>Conceptos Relacionados</h1>
+          </header>
+          <div class="borde_con_patron"><span></span></div>
+      </div>
+      <div class="contenido">
+        <!-- empieza el contenido -->
+        <div class="espaciado"></div>
+      <article class="texto">
+        <div class="titulo">Música afinada en igual temperamento</div>
+        <div class="cuerpo">
+          <p>El Círculo de Quintas nos muestra la estructura subyacente de la música más convencional, la que llamamos “de igual temperamento”
+            La música afinada en igual temperamento es la que tiene doce notas: Do, Re, Mi, Fa, Sol, La, Si y sus sostenidos y bemoles. Al igual que considera que do sostenido es igual a re bemol, re sostenido igual a mi bemol, etc. (esto último se denomina <b>enarmonía</b>).
+           </p>
+        </div>
+        <div class="divisor"><span></span></div>
+        <div class="titulo">Cifrado Americano</div>
+        <div class="cuerpo">
+          <p> Si lo conocés, nunca está de más recordarlo. Sino, habrás notado que el diagrama está escrito con letras: esto es algo normal y proviene del Cifrado Americano. Es el sistema de notación musical más utilizado a nivel mundial. En él, las notas musicales tienen la siguiente denominación:</p>
+          <figure>
+            <img id="cifrado" src="imágenes/cifrado.jpg" width= 300>
+            <figcaption>Cifrado Americano</figcaption>
+        </figure>
+        </div>
+        <div class="divisor"><span></span></div>
+        <div class="titulo">Intervalo de quinta</div>
+        <div class="cuerpo">
+          <p> Se considera intervalo a la distancia que hay de una nota a otra. En el caso del intervalo de quinta justa, hay cinco notas entre cada una de ellas. Ejemplo: De C a G, si se cuenta son C, D, E, F y G (siempre se cuenta la nota de partida y la de llegada).</p>
+            <p> Las quintas y las cuartas son intervalos que se componen, respectivamente, de 7 y 5 semitonos. Entonces, la circunferencia del círculo de quintas es un intervalo de 7 octavas (84 semitonos).</p>
+           <p> Si se invierte el sentido de la lectura -dando una relación de cuartas y no de quintas- la circunferencia equivale a 5 octavas (60 semitonos).</p>
+           
+        </div>
+        <div class="divisor"><span></span></div>
+        <div class="titulo">Relativos</div>
+        <div class="cuerpo">
+          <p>Dos tonalidades son relativas cuando estas comparten las mismas notas. En intervalos, el relativo menor corresponde al <b>sexto</b> grado de la tónica (lo que corresponde a la distancia de un tono y medio abajo). Los relativos mayores se deducen a la inversa, siendo en intervalos el <b>tercer</b> grado menor (un tono y medio arriba).</p>
+          <p> Por ejemplo, el relativo menor de Do mayor es La: </p>
+
+          <table border="1">
+            <thead>
+                <td>I</td>
+                <td>II</td>
+                <td>III</td>
+                <td>IV</td>
+                <td>V</td>
+                <td>VI</td>
+                <td>VII</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="tonica"> Do </td>
+                    <td> Re</td>
+                    <td> Mi</td>
+                    <td> Fa</td>
+                    <td> Sol</td>
+                    <td id="relativo"> La</td>
+                    <td> Si</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p> Y, el relativo mayor de La menor es Do (proceso inverso): </p>
+
+        <table border="1">
+            <thead>
+                <td>I</td>
+                <td>II</td>
+                <td>III</td>
+                <td>IV</td>
+                <td>V</td>
+                <td>VI</td>
+                <td>VII</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="tonica"> La </td>
+                    <td> Si</td>
+                    <td id="relativo"> Do</td>
+                    <td> Re</td>
+                    <td> Mi</td>
+                    <td> Fa</td>
+                    <td> Sol</td>
+                </tr>
+            </tbody>
+        </table>
+
+        </div>
+      </article>
+      </div>
+  
+      <footer id="pie"> &copy; 2021 Agustina Pose </footer>
+  
+    </div>
+    </body>
+  </html>

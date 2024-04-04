@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content ="Esta página contiene un juego interactivo sobre el Círculo de Quintas"> <!-- reseña de lo que contiene la página adentro -->
+  <meta name="keywords" content ="HTML5, CSS3, JS">
+  <title> Juego Interactivo </title>
+  <link rel="stylesheet" href="Estilo.css">
+  <script src="ArrastrarySoltar.js"></script>
+</head>
+
+<body>
+  <div id="agrupar">  <!-- todo el contenido de mi página -->
+    <div class="logo"><span></span></div>  <!-- acá el logo-->
+    <div class="borde_con_volados">  <!-- el bordecito envuelve a la cabecera y el nav  -->
+        <nav id="menu"><a href="index.html">Inicio</a> <a href="conceptos_relacionados.html">Conceptos</a> <a href="utilización.html">Utilización</a> <a href="juego.html">Juego</a> <a href="más.html">Más</a></nav>
+        <div class="borde_con_patron"><span></span></div>
+        <header id="cabecera">
+          <h1>Juego Interactivo</h1>
+        </header>
+        <div class="borde_con_patron"><span></span></div>
+    </div>
+    <div class="contenido">
+      <!-- empieza el contenido -->
+      <div class="espaciado"></div>
+    <article class="texto">
+      <div class="titulo">Consigna</div>
+      <div class="cuerpo">
+        <p> De todos los acordes de la caja, solo hay 2 que corresponden a la tonalidad de Do mayor. Elegilos y arrastralos para ganar. Acordate que es de gran ayuda dibujar el cono! </p>
+      </div>
+    </article>
+
+    <article id="cajasoltar">
+      <div class=divsCajaSoltar id="caja1"></div>
+      <div class=divsCajaSoltar id="caja2"></div>
+    </article>
+  <article id="cajaimagenes">
+      <img id="Sol_Sostenido" src = "imágenes/sol_sostenido.gif">
+      <img id="Fa_Menor" src = "imágenes/fa_menor.gif">
+      <img id="Fa_Mayor" src = "imágenes/fa_mayor.gif">
+      <img id="Re_Mayor" src = "imágenes/re_mayor.gif">
+      <img id="Sol_Mayor" src = "imágenes/sol_mayor.gif">
+      <img id="Mi_Mayor" src = "imágenes/mi_mayor.gif">
+  
+  </article>
+
+
+    </div>
+
+    <footer id="pie"> &copy; 2021 Agustina Pose </footer>
+
+  </div>
+  </body>
+</html>

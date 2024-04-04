@@ -1,0 +1,285 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background: #49523D url(imágenes/fondo_body.jpg);
+	color: #333;
+	font: normal 62.5% "Lucida Sans Unicode",sans-serif;
+}
+
+
+p {
+	margin-bottom: 1.2em;
+	margin: 5px auto; /* vertical-horizontal  */
+	text-align: justify;
+}
+
+
+#texto_cabecera{
+	margin: auto;
+	text-align: center;
+}
+
+
+h1 {
+	font: normal 1.6em serif;
+}
+
+
+h2 {
+	font: bold 1em Verdana,serif;
+	margin: 3px 0 1px; /* arriba-lados-abajo  */
+}
+
+.divisor {
+	background: url(imágenes/divisor.gif);
+	height: 20px;
+	margin: 4px 0;
+}
+
+/* estructura */
+#agrupar {
+	background: url(imágenes/fondo_agrupar.jpg) repeat-y center top;
+	margin: 0 auto;
+	width: 736px;
+}
+
+.logo {
+	background: url(imágenes/logo.jpg) ; 	/* donde iría el logo. la idea es que sea un instrumento musical */
+	float: left;
+	height: 140px;
+	margin-top: 12px;
+	width: 52px;
+}
+
+.borde_con_volados {
+	background: url(imágenes/volados.gif) 0 -4%;
+	float: left;
+	text-align: center;
+	width: 632px;
+	
+}
+
+#cabecera {
+	background: #49523D url(imágenes/mi_header.jpg); /* hacer imagen con corel*/
+	color: #FFC;
+	font-size: 1.4em;
+	height: 232px;
+	padding-right: 270px;
+	
+}
+
+#cabecera h1 {
+	font: normal 3.2em serif,sans-serif;
+	padding: 76px 0 20px 0;
+}
+
+.borde_con_patron {
+	background: #49523D url(imágenes/patron.gif) repeat-x;
+	clear: both;
+	height: 12px;
+	
+}
+
+/* nav */
+#menu {
+	margin: 0 24px;
+}
+
+#menu a {
+	color: #6C7151;
+	font: normal 1.9em serif;
+	line-height: 50px;
+	margin: 0 16px;
+	text-decoration: none;
+	display:inline-block;
+}
+
+#menu a:hover{
+	color: #333;
+	transform: rotate(5deg);
+	text-shadow: #6C7151 3px 3px 5px;
+}
+
+/* contenido */
+.contenido {
+	clear: both;
+	font-size: 1.2em;
+	margin: 0 52px;
+	padding: 0 38px 12px;
+}
+
+.contenido .espaciado {
+	height: 22px;
+}
+
+
+/* items de contenido*/
+
+.texto .titulo {
+	color: #49523D;
+	font: normal 2em serif;
+}
+
+.texto .titulo:first-letter { /* propiedad para modificar primer letra */
+	
+	display: block;
+	font-size: 2.2em;
+}
+
+.texto .cuerpo {
+	clear: both;
+}
+
+
+
+figure{
+	margin: 10px 120px; /* el fondo es de 240px de ancho. 120 para que estén centradas */
+}	
+figcaption
+{
+	text-align: center;
+	padding: 5px 5px;
+}
+
+table{
+	font-size: 22px;
+	width: 300px;
+    border-collapse: collapse;  /* para q me haga bordes simples en las tablas */
+    border-color: #49523D;
+    text-align: center;
+    margin: 30px auto;
+    padding: 40px 40px;
+	
+
+}
+
+#tonica
+{
+	background-color:#6C7151;
+	color: #FFFFCC;
+
+}
+#relativo
+{
+	background-color:#333;
+	color: #FFFFCC;
+}
+
+ul {
+	list-style-type:square;    
+	text-align: justify;
+	padding: 10px 20px;             
+}
+
+ol {  
+	text-align: justify;
+	padding: 10px 20px;             
+}
+
+
+/* footer */
+#pie {
+	clear: both; /* para que no se ubique a los costados, sino abajo */
+	background: url(imágenes/volados_pie.gif);
+	color: #666;
+	font-size: 1.1em;
+	line-height: 41px; 
+	margin: 0 auto;
+	text-align: center;
+	width: 632px;
+}
+
+#spoti
+{
+	margin: 20px auto;
+
+}
+
+
+/* sobre el reproductor: */
+
+#reproductor{
+    width: 480px;
+	height: auto;
+    margin: 20px auto;
+    padding: 5px;
+    background: #666;
+    border: 1px solid #6C7151;
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+nav{
+    margin: 5px 0px;
+}
+#botones{
+    float:left;
+    display:inline-flex;
+    width: 100px;
+    height: 20px;
+}
+
+
+#barra{
+    position: relative;
+	float: right;
+    width: 305px; /* el máximo */
+    height: 16px;
+    padding: 2px;
+    border: 1px solid #6C7151;
+    background: #333;
+}
+
+#progreso{
+    position: absolute;
+    width: 0px;
+    height: 16px;
+    background: blanchedalmond;
+}
+
+
+/* hasta ahí reproductor */
+
+
+ /* estética drag and drop */
+    
+ #cajasoltar{
+	float:left;
+	width: 520px;
+	height: 100px;
+	margin: 10px;
+	padding:10px;
+	border: 2px solid #333;
+}
+
+.divsCajaSoltar {
+	border: 2px solid #333;
+	width: 200px;
+	height: 50px;
+	float: left;
+	margin: 10px;
+	background-color: #FFFFCC;
+}
+
+
+
+#cajaimagenes{
+
+	float:left;
+	width: 520px;
+	margin: 45px 10px;
+	padding:10px;
+	border: 2px solid #333;
+}
+
+
+#cajaimagenes > img {
+	float:left;
+	margin: 10px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content ="Esta es una página sobre la utilización del Círculo de Quintas"> <!-- reseña de lo que contiene la página adentro -->
+  <meta name="keywords" content ="HTML5, CSS3, JS">
+  <title> Utilización</title>
+  <link rel="stylesheet" href="Estilo.css">
+  <script type="text/javascript" src="Reproductor.js"></script>
+</head>
+
+<body>
+    <div id="agrupar">  <!-- todo el contenido de mi página -->
+      <div class="logo"><span></span></div>  <!-- acá el logo-->
+      <div class="borde_con_volados">  <!-- el bordecito envuelve a la cabecera y el nav  -->
+        <nav id="menu"><a href="index.html">Inicio</a> <a href="conceptos_relacionados.html">Conceptos</a> <a href="utilización.html">Utilización</a> <a href="juego.html">Juego</a> <a href="más.html">Más</a></nav>
+          <div class="borde_con_patron"><span></span></div>
+          <header id="cabecera">
+            <h1>Utilización y Ejemplos</h1>
+          </header>
+          <div class="borde_con_patron"><span></span></div>
+      </div>
+      <div class="contenido">
+        <!-- empieza el contenido -->
+        <div class="espaciado"></div>
+      <article class="texto">
+        <p> Al Círculo de Quintas se lo puede interpretar de distintas formas: podemos tomarlo como si fuesen tonalidades (tonalidad de Do mayor, Sol mayor, Re mayor, etc.), acordes (acorde de Do mayor, Sol Mayor, etc) o simplemente notas (Do, Sol, Re, La, Mi, Si). Cada interpretación es útil de una manera distinta.</p>
+        <div class="titulo">Interpretarlo como tonalidades</div>
+        <div class="cuerpo">
+          <p>Podemos saber cuántas notas sostenidas y bemoles tiene cada tonalidad. En el sentido de las agujas del reloj, las notas sostenidas aumentan. Mientras que, en el sentido contrario, las notas bemoles. </p>
+            <p> Entonces, la tonalidad de Do (la inicial, posicionada a las 12 en el círculo) no posee sostenidos ni bemoles. Hacia su derecha, Sol posee un sostenido, Re 2 sostenidos, y así sucesivamente. </p>
+            <figure>
+              <img id="sostenidos" src="imágenes/sostenidos_circulo_de_quintas.png" width= 300>
+              <figcaption>Cantidad de sostenidos en cada tonalidad</figcaption>
+          </figure>
+          <p> Si recorremos el circulo exterior en sentido antihorario tenemos que cada tonalidad está situada una quinta justa por debajo de la anterior, o lo que es lo mismo, un intervalo de cuarta (de acá la otra denominación de Circulo de Cuartas).</p>
+          <p> Entonces, de forma análoga al recorrido horario, si recorremos el círculo en sentido antihorario ganamos por cada nota un bemol en nuestra escala: </p>
+          <figure>
+            <img id="sostenidos" src="imágenes/bemoles_circulo_de_quintas.png" width= 300>
+            <figcaption>Cantidad de bemoles en cada tonalidad</figcaption>
+        </figure>
+        </div>
+        <div class="divisor"><span></span></div>
+        <div class="titulo">Acordes: cómo conseguir todos los que conforman una tonalidad</div>
+        <div class="cuerpo">
+          <p> El Círculo de Quintas nos permite conseguir muy fácilmente todos los acordes que componen una escala/tonalidad.</p>
+          <p> Recordemos que, por concepto de teoría musical, cuando hablamos de tonalidades mayores los acordes que la componen son:</p>
+          <ul>
+            <li>Grados I, IV y V (siempre mayores)</li>
+            <li>Grados II, III y VI (siempre menores)</li>
+            <li>Grado VII (siempre disminuido)</li>
+        </ul>
+        <p>Utilicemos de ejemplo la tonalidad de Sol mayor. Sabemos que la misma está compuesta por los siguientes acordes:</p>
+        <ul>
+          <li>Tónica: Sol mayor</li>
+          <li>4to grado: Do mayor</li>
+          <li>5to grado: Re mayor</li>
+          <li>6to grado (relativo menor): Mi menor </li>
+          <li>2do grado mayor: La menor</li>
+          <li>3er grado menor: Si menor</li>
+          <li>Por último, su séptimo grado mayor: Fa sostenido disminuido</li>
+      </ul>
+      <p>Todo lo anterior se puede conseguir a partir del Círculo de Quintas de una forma muy simple. Solamente se debe agrupar en forma de cono (teniendo en cuenta como centro la tónica de la tonalidad deseada) con un apéndice por debajo que abarque el séptimo grado.</p>
+
+          <figure>
+            <img id="cifrado" src="imágenes/acordes_tonalidad_sol.png" width= 300>
+            <figcaption>A partir de Sol, se agrupa en forma de cono. No olvidar incluir el apéndice (f#).</figcaption>
+        </figure>
+        <p>No olvidemos que, como hablamos al comienzo, el círculo también puede ser interpretado como notas (no solo tonalidades o acordes). Es por esto que este mismo truco de agrupar puede ser utilizado para conseguir las notas de la escala en la que nos posicionamos.</p>
+          <p>A continuación, Jaime Altozano lo explica muy claramente. Si deseás ver su video completo, podés encontrar el link en la lista de referencias bibliográficas (en el apartado <a href="más.html">Más</a>).</p>
+        </div>
+      </article>
+
+      <article id="reproductor">
+        <video id="medio" width="480" height="290">
+            <source src="videos/video_circulo.mp4">
+            <source src="videos/video_circulo.ogv">
+        </video>
+        <nav>
+            <div id="botones">
+                <!-- acá como el reproducir, agregué un pausa, otro de 10 segs para delante y otro de 10 segs para atrás -->
+                <button type="button" id="reproducir"> Reproducir </button>
+                <button type="button" id="pausa"> Pausa </button>
+                <button type="button" id="menosdiez"> -10 </button>
+                <button type="button" id="masdiez"> +10 </button>
+            </div>
+            <div id="barra">
+                <div id="progreso"></div>
+            </div>
+            <div style="clear: both"></div>
+        </nav>
+    </article>
+
+      </div>
+      <footer id="pie"> &copy; 2021 Agustina Pose </footer>
+  
+    </div>
+    </body>
+  </html>
